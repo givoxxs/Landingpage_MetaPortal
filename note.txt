@@ -1,0 +1,248 @@
+<div class="container_home">
+                        <h3>META LEGENDS</h3>
+                        <div class="home_slider">
+                            <div class="slider_top">
+                                <img src="./assets/img/1x1.jpg" alt="">
+                                <ul>
+                                    <li class="next" data-index="1">
+                                        <div class="item">
+                                            <img src="./assets/img/1x1.jpg" alt="">
+                                            <div class="item_in">
+                                                <div class="img" data-bg-img="/assets/img/home_slider/1.jpg" style="background-image: url(./assets/img/home_slider/1.jpg);"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="next2" data-index="2">
+                                        <div class="item">
+                                            <img src="./assets/img/1x1.jpg" alt="">
+                                            <div class="item_in">
+                                                <div class="img" data-bg-img="/assets/img/home_slider/2.jpg" style="background-image: url(./assets/img/home_slider/2.jpg);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="" data-index="3">
+                                        <div class="item has_video">
+                                            <img src="./assets/img/1x1.jpg" alt="">
+                                            <a class="popup-youtube metaportal_fn_videobutton" href="https://www.youtube.com/embed/7e90gBu4pas">
+                                                <svg version="1.1" id="null" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="fn__svg replaced-svg">
+                                                    <path class="stroke-solid" fill="none" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7C97.3,23.7,75.7,2.3,49.9,2.5">
+                                                    </path>
+                                                    <path class="icon" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"></path>
+                                                </svg>
+                                            </a>
+                                            <div class="item_in">
+                                                <div class="img" data-bg-img="/assets/img/home_slider/3.jpg" style="background-image: url(./assets/img/home_slider/3.jpg);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="" data-index="4">
+                                        <div class="item">
+                                            <img src="./assets/img/1x1.jpg" alt="">
+                                            <div class="item_in">
+                                                <div class="img" data-bg-img="/assets/img/home_slider/4.jpg" style="background-image: url(./assets/img/home_slider/4.jpg);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-index="5" class="prev2">
+                                        <div class="item">
+                                            <img src="./assets/img/1x1.jpg" alt="">
+                                            <div class="item_in">
+                                                <div class="img" data-bg-img="/assets/img/home_slider/5.jpg" style="background-image: url(./assets/img/home_slider/5.jpg);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li data-index="6" class="prev">
+                                        <div class="item">
+                                            <img src="./assets/img/1x1.jpg" alt="">
+                                            <div class="item_in">
+                                                <div class="img" data-bg-img="/assets/img/home_slider/6.jpg" style="background-image: url(./assets/img/home_slider/6.jpg);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="active" data-index="7">
+                                        <div class="item">
+                                            <img src="./assets/img/1x1.jpg" alt="">
+                                            <div class="item_in">
+                                                <div class="img" data-bg-img="/assets/img/home_slider/7.jpg" style="background-image: url(./assets/img/home_slider/7.jpg);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="slider_nav">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    .slider_top > img{
+	width: 33.3333% !important;
+	min-width: 33.3333%  !important;
+	opacity: 0;
+}
+
+.slider_top{
+	padding: 59px 0 60px;
+	position: relative;
+}
+
+.slider_top ul{
+	list-style-type: none;
+	/* margin: 0;
+	padding: 0; */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.slider_top li{
+	width: 33.3333%;
+	position: absolute;
+	margin: 0;
+	transform: translateX(100%) scale(0);
+	transition: all 0s ease;
+	opacity: 0;
+	top: 65px;
+}
+
+.slider_top li.next2{
+	left: 100%;
+	transform: translateX(100%) scale(0);
+	transition: all 1s ease;
+}
+.slider_top li.prev2{
+	left: 0;
+	transform: translateX(-100%) scale(0);
+	transition: all 1s ease;
+}
+.slider_top li.prev,
+.slider_top li.next,
+.slider_top li.active{
+	transform: translateX(0) scale(1);
+	opacity: 1;
+	transition: all 1s ease;
+}
+.slider_top li.prev,
+.slider_top li.next{
+	cursor: pointer;
+}
+.slider_top li.prev{
+	left: -40px;
+}
+.slider_top li.next{
+	left: 66.6666%;
+	margin-left: 40px;
+}
+.slider_top img{
+	min-width: 100%;
+	opacity: 0;
+}
+/* .slider_top .item{
+	perspective: 1000px;
+    perspective-origin: 50% 50%;
+} */
+.slider_top .item_in{
+	padding: 20px;
+	border-radius: 20px;
+	border: 1px solid rgba(255,255,255,.5);
+	background-color: rgba(255,255,255,.05);
+	transition: all 1s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: scaleX(0.85) scaleY(0.85) rotateY(180deg);
+}
+/* .metaportal_fn_videobutton{
+	opacity: 0;
+	visibility: hidden;
+}
+.active .metaportal_fn_videobutton{
+	opacity: 1;
+	visibility: visible;
+} */
+.slider_top .img{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+}
+.slider_top .img:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all .3s ease;
+}
+.slider_top .active .has_video .img:after{
+	background-color: rgba(0,0,0,0.3);
+}
+.slider_top .item_in:after{
+	content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+	top: 0;
+	left: 0;
+    color: var(--color1);
+    opacity: .15;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px;
+}
+.slider_top .item_in:before{
+	height: 15px;
+	width: 60%;
+	content: '';
+	position: absolute;
+	top: 100%;
+	margin-top: 30px;
+	background-color: #000;
+	border-radius: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-filter: blur(15px);
+	-o-filter: blur(15px);
+	filter: blur(15px);
+}
+.slider_top .active .item_in{
+	transform: scaleX(1) scaleY(1) rotateY(0deg);
+}
+.slider_top .prev2 .item_in,
+.slider_top .prev .item_in{
+	transform: scaleX(1.05) scaleY(0.85) rotateY(-30deg);
+}
+.slider_top .next2 .item_in,
+.slider_top .next .item_in{
+	transform: scaleX(1.05) scaleY(0.85) rotateY(30deg);
+}
+.slider_top .img{
+	border-radius: 20px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.slider_top li.active{
+	left: 33.3333%;
+}

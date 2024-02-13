@@ -184,7 +184,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container_home {
-    
+    width: 100%;
+    padding: 0 100px;
+    margin: 0 auto;
 }
 
 .container_home h3 {
@@ -198,4 +200,45 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 20px;
     overflow: hidden;
 }
+
+.slider_top{
+	padding: 59px 0;
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    /* flex-wrap: wrap; */
+}
+
+.slider_top .image-item {
+    padding: 0 10px;
+}
+
+.image-item .item {
+    
+}
+
+.image-item img {
+	border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider_top > img{
+	width: 33.3333% !important;
+	min-width: 33.3333%  !important;
+}
+
+/* .slider_top .item{
+	perspective: 1000px;
+    perspective-origin: 50% 50%;
+} */
+
+
+
+
+
+
+
 
