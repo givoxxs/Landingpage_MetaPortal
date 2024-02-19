@@ -7,6 +7,8 @@
 
 .main {
     position: relative;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     font-family: var(--hff);
@@ -14,6 +16,7 @@
     line-height: 1.44;
     color: var(--bc);
     height: 100vh;
+    width: 100%;
     background: linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
 }
 /* ROOT */
@@ -82,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     margin-top: 54px;
     /* background-color: rgba(27,18,29,1); */
+    width: 100%;
     background: linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
 }
 /* 1. Header */
@@ -706,74 +710,57 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	position: relative;
 	height: 12px;
+    box-sizing: border-box;
 }
 .divider_section .divider{
 	position: relative;
 	display: flex;
 	margin: 0 auto;
 	width: fit-content;
+    flex-direction: row;
 	max-width: 100%;
 }
-.divider_section .divider > *{
-	margin-right: 20px;
-}
-.divider_section .divider > *:last-child{
-	margin-right: 0;
-}
-.divider_section .divider:before,
-.divider_section .divider:after{
-	content: '';
-	position: absolute;
-	background-color: rgba(255,255,255,.15);
-	height: 1px;
-	top: 5px;
-	width: 5000px;
-}
-.divider_section .divider:before{
-	right: 100%;
-	margin-right: 20px;
-}
-.divider_section .divider:after{
-	left: 100%;
-	margin-left: 20px;
-}
-.divider_section span{
+
+.divider_section .same_size{
 	height: 12px;
 	position: relative;
 	display: block;
 	border: 2px solid rgba(255,255,255,.5);
 	border-radius: 12px;
 	background-color: rgba(255,255,255,.05);
-}
-.divider_section span:after{
-	right: -2px;
-	bottom: -2px;
-	top: -2px;
-	left: -2px;
-	position: absolute;
-	color: var(--color1);
-	content: '';
-    opacity: .15;
-    border-radius: 12px;
-    box-shadow: 0px 5px 20px;
+    margin: 20px 20px 20px;
+    box-sizing: border-box;
 }
 .divider_section .circle{
+    border-radius: 100%;
 	width: 12px;
 }
 .divider_section .long{
 	width: 200px;
 }
+
+.divider_section .pre_divider {
+    position: relative;
+	display: block;
+    display: flex;
+    margin: 25.5px 0  25.5px;
+    left: 0;
+    width: 500px;
+    height: 1px;
+    text-align: center;
+    background-color: rgba(255,255,255,.15);
+}
 /* COLLECTION */
 #collection {
     padding: 144px 0 150px;
     width: 100%;
+    margin: 0;
 }
 
 .container_clt {
     width: 100%;
     padding: 0 100px;
-    max-width: 1800px;
-    margin: 0 auto;
+    margin-bottom: 140px;
 }
 
 .container_clt h3 {
@@ -798,6 +785,90 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: -1;
+}
+
+.list_collection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.col_top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.col_top .item {
+    width: 18.8%;
+    margin: 0 0 40px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rbga(255, 255, 255, 1);
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.35s ease-in-out;
+}
+
+.col_top .item:hover {
+    box-shadow: 0px 5px 20px var(--color1);
+}
+
+.col_top .w_smalll {
+    width: 18.8%;
+    height: 18.8%;
+}
+
+.col_top .w_big {
+    width: 31.2%;
+}
+
+.col_top img {
+    width: 100%;
+}
+
+.col_bottom {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.col_bottom .item {
+    width: 18.8%;
+    margin: 0 0 40px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rbga(255, 255, 255, 1);
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    box-sizing: border-box;
+    transition: all 0.35s ease-in-out;
+}
+
+.col_bottom .item:hover {
+    box-shadow: 0px 5px 20px var(--color1);
+}
+
+.col_bottom .w_smalll {
+    width: 18.8%;
+    height: 18.8%;
+}
+
+.col_bottom .w_big {
+    width: 31.2%;
+}
+
+.col_bottom img {
+    width: 100%;
 }
 
 
