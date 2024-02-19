@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--bff);
 }
+
 /* Preview header */
 .preview_header {
     display: flex;
@@ -76,7 +77,7 @@ p {
 }
 
 .buynow:hover {
-    opacity: 0.8;
+    opacity: 0.7;
     cursor: pointer;
 }
 
@@ -122,7 +123,7 @@ p {
 }
 
 .header_logo .trigger {
-    padding: 13px 17px;
+    padding: 10px 17px;
     background-color: #000;
     border-radius: 100%;
     color: #bbb;
@@ -186,6 +187,11 @@ p {
     border-radius: 5px;
     color: #DDD;
     text-transform: uppercase;
+    transition: all 0.35s ease;
+}
+
+.wallet_button:hover {
+    opacity: 0.7;
 }
 
 /* CONTENT */
@@ -986,16 +992,24 @@ p {
     display: flex;
     flex-direction: row;
     width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .box_blog .col_1 {
     width: 50%;
+    margin: 0 10px;
+    display: flex;
+    align-items: stretch;
 }
 
 .box_blog .item_in {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 
 .number span {
@@ -1005,6 +1019,146 @@ p {
     border-radius: 100%;
 }
 
+.time {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #9ba0b8;
+    margin-bottom: 7px;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.item_in .title h3 a{
+    font-weight: 100;
+    color: #ddd;
+    font-size: 30px;
+    transition: all 0.35s ease;
+}
+
+.title h3 a:hover {
+    color: var(--color1);
+}
+
+.box_blog img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.box_blog .image {
+    border-radius: 10px;
+}
+
+.readmore a {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #9ba0b8;
+    padding-left: 100px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.item_in:hover .readmore a {
+    padding-left: 80px;
+}
+
+.readmore a span {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.readmore a span:hover {
+    color: var(--color1);
+}
+
+.item_in:hover .readmore span {
+    opacity: 1;
+}
+
+.readmore a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 1px;
+    top: 50%;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.item_in:hover .readmore a::after {
+    width: 50px;
+}
+
+.box_blog .col_2 {
+    width: 50%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-left: 30px;
+}
+
+.bottom_box {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button_read {
+    width: 48.5%;
+    margin-left: 10px;
+    border: 3px solid var(--color1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 24px 0;
+}
+
+.button_read:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.button_read a {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #ddd;
+    font-weight: 700;
+}
+
+.desc_box {
+    width: 50%;
+    padding: 0 40px 0 60px;
+    display: flex;
+    align-items: center;
+}
+
+.desc_box p {
+    font-size: 18px;
+    color: #9ba0b8;+
+}
+
+/* CONTACT */
+#contact {
+    padding: 144px 0 150px;
+    width: 100%;
+    margin: 0;
+}
+
+.container_contact {
+    width: 100%;
+    padding: 0 150px;
+}
+
+#contact .title_big::before {
+    content: "CONTACT US";
+}
 
 
 
