@@ -105,6 +105,38 @@ p {
     width: 100%;
     background: linear-gradient(90deg, rgba(27,18,29,1) 0%, rgba(18,15,47,1) 50%, rgba(27,18,29,1) 100%);
 }
+/* Layout */
+.layout{
+    
+}
+
+.layout_1 {
+    width: 270px;
+    height:270px;
+    position: fixed;
+    top: 35%;
+    left: 25%;
+    background-color:   var(--color1);
+    border-radius: 100%;
+    z-index: 200;
+    filter: blur(150px);
+    pointer-events: none;
+}
+
+.layout_2 {
+    width: 270px;
+    height:270px;
+    position: fixed;
+    top: 45%;
+    right: 25%;
+    background-color:   var(--color2);
+    border-radius: 100%;
+    z-index: 200;
+    -webkit-filter: blur(150px);
+    filter: blur(150px);
+    pointer-events: none;
+}
+
 /* 1. Header */
 /* Header LOGO */
 .header {
