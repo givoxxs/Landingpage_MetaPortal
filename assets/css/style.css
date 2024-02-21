@@ -1190,7 +1190,7 @@ p {
 
 /* CONTACT */
 #contact {
-    padding: 144px 0 150px;
+    padding: 144px 0 0px;
     width: 100%;
     margin: 0;
 }
@@ -1344,7 +1344,41 @@ input[type="checkbox"] {
 .send_mess a:hover {
     opacity: 0.7;
 }
+/* footer */
+.footer {
+    /* margin: 140px 100px 0; */
+    margin-top: 140px;
+    width: 100%;
+    padding: 40px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.footer .intro {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    color: #9ba0b8;
+    font-weight: 500;
+    padding-left: 20px;
+}
 
+.footer strong {
+    font-weight: 600!important;
+}
+
+.footer .outro {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer li p {
+    padding-left: 40px;
+    font-size: 14px;
+    color: #9ba0b8;
+}
 
 
