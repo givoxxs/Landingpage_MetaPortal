@@ -39,19 +39,19 @@ $(document).ready(function(){
     slidesToShow: 4,
     responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1400,
           settings: {
             slidesToShow: 3,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 2,
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 1040,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
